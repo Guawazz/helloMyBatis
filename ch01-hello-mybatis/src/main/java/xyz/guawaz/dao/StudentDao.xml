@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.guawaz.dao.StudentDao">
+
+    <!--
+    select：表示查询操作
+    id：要执行的查询操作的唯一标识，mybatis会使用这个id来找到要执行的查询操作
+        要求使用dao接口中的方法名
+
+    resultType:表示结果类型，是sql语句执行后得到的resultSet,遍历这个resultSet得到的java对象的类型
+               值要求是类型的全限定名称
+
+    -->
+    <select id="selectStudents" resultType="xyz.guawaz.domain.Student">
+        select id,name,email,age from student order by id
+    </select>
+
+
+
+
+</mapper>
+<!--sq1映射文件:写sq1语句的 ，mybatis会 执行这些sql
+1.指定约束文件：
+    <!DOCTYPE mapper
+            PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+2.约束文件的作用：限制、检查在当前文件中出现的标签和格式
+3.<mapper：当前文件的根标签，必须的
+ namespace：命名空间，唯一，要求使用dao接口的全限定名称
+
+4.在当前文件中可以使用特定标签，表示数据库的特定操作
+<select>:查询
+<update>:更新
+<insert>:插入
+<delete>:删除
+
+
+
+-->
