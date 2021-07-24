@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b065664-1cf1-47fc-9450-98a0aba1a684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8b065664-1cf1-47fc-9450-98a0aba1a684" name="Default Changelist" comment="dao and proxy dao">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch04-param/ch04-param.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/java/xyz/guawaz/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/java/xyz/guawaz/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/java/xyz/guawaz/dao/StudentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/java/xyz/guawaz/dao/StudentDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch01-hello-mybatis/src/test/java/xyz/guawaz/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ch01-hello-mybatis/src/test/java/xyz/guawaz/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/java/xyz/guawaz/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ch01-hello-mybatis/src/main/java/xyz/guawaz/MyApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch02-mybatis-dao/ch02-mybatis-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ch02-mybatis-dao/ch02-mybatis-dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03-proxy-dao/ch03-proxy-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ch03-proxy-dao/ch03-proxy-dao.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +71,17 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.11904762" />
     <property name="project.structure.side.proportion" value="0.16190475" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="xyz.guawaz" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.test">
-    <configuration name="MyApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyTest.test3">
+    <configuration name="MyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.guawaz.MyApp" />
-      <module name="ch02-mybatis-dao" />
+      <module name="ch01-hello-mybatis" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="xyz.guawaz.*" />
@@ -100,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ch01-hello-mybatis" />
+    <configuration name="MyTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch04-param" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="xyz.guawaz.*" />
@@ -109,8 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="xyz.guawaz" />
-      <option name="MAIN_CLASS_NAME" value="xyz.guawaz.AppTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="xyz.guawaz.MyTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,24 +135,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ch02-mybatis-dao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xyz.guawaz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="xyz.guawaz" />
-      <option name="MAIN_CLASS_NAME" value="xyz.guawaz.MyTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ch02-mybatis-dao" />
+    <configuration name="MyTest.test2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch04-param" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="xyz.guawaz.*" />
@@ -164,13 +151,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch04-param" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.guawaz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="xyz.guawaz" />
+      <option name="MAIN_CLASS_NAME" value="xyz.guawaz.MyTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.test3" />
+        <item itemvalue="JUnit.MyTest.test2 (1)" />
         <item itemvalue="JUnit.MyTest.test" />
-        <item itemvalue="JUnit.MyTest.test2" />
-        <item itemvalue="JUnit.AppTest.test1" />
-        <item itemvalue="JUnit.MyTest.test1" />
-        <item itemvalue="Application.MyApp (1)" />
+        <item itemvalue="JUnit.MyTest.test (1)" />
+        <item itemvalue="Application.MyApp" />
       </list>
     </recent_temporary>
   </component>
@@ -187,11 +190,23 @@
       <workItem from="1626956225762" duration="124000" />
       <workItem from="1626956360353" duration="6860000" />
       <workItem from="1626964703871" duration="9122000" />
-      <workItem from="1627028514054" duration="10045000" />
+      <workItem from="1627028514054" duration="28225000" />
     </task>
+    <task id="LOCAL-00001" summary="dao and proxy dao">
+      <created>1627058015012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627058015012</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dao and proxy dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao and proxy dao" />
   </component>
 </project>
